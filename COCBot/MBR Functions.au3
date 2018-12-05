@@ -296,6 +296,7 @@
 #include "functions\Village\BuilderBase\StartClockTowerBoost.au3"
 #include "functions\Village\BuilderBase\BuilderBaseReport.au3"
 #include "functions\Village\BuilderBase\SuggestedUpgrades.au3"
+#include "functions\Village\BuilderBase\CleanYardBB.au3" ; Builder Base Clean Yard
 
 #include "functions\Other\Api.au3"
 #include "functions\Other\ApiClient.au3"
@@ -307,7 +308,7 @@
 #include "functions\Config\readConfig.au3"
 #include "functions\Config\saveConfig.au3"
 
-; MOD++
+; MOD++ Team
 #include "MOD\Include_Files.au3"
 
 ; EOF

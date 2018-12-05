@@ -799,12 +799,15 @@ Global $g_bChkBotStop = False, $g_iCmbBotCommand = 0, $g_iCmbBotCond = 0, $g_iCm
 Global $g_iTxtRestartGold = 10000
 Global $g_iTxtRestartElixir = 25000
 Global $g_iTxtRestartDark = 500
-Global $g_bChkTrap = True, $g_bChkCollect = True, $g_bChkTombstones = True, $g_bChkCleanYard = False, $g_bChkGemsBox = False
+Global $g_bChkTrap = True, $g_bChkCollect = True, $g_bChkTombstones = True, $g_bChkCleanYard = False, $g_bChkCleanYardBB = False, $g_bChkGemsBox = False ; Builder Base Clean Yard
 Global $g_bChkCollectCartFirst = False, $g_iTxtCollectGold = 0, $g_iTxtCollectElixir = 0, $g_iTxtCollectDark = 0
 Global $g_bChkTreasuryCollect = False
 Global $g_iTxtTreasuryGold = 0
 Global $g_iTxtTreasuryElixir = 0
 Global $g_iTxtTreasuryDark = 0
+Global $g_aaiBBPolygonPoints[6][2] = [[4, -1], [470, 125], [70, 425], [465, 710], [855, 410], [470, 125]] ; [[Number of sides of Polygon, -1], [TopX, TopY], [LeftX, LeftY], [BottomX, BottomY], [RightX, RightY], [1stpointX, 1stpointY]]
+Global $g_BBCocDiamondECD = "460,115|850,420|460,720|70,420" ; Builder Base Diamond "StartX,StartY|EndX,StartY|EndX,EndY|StartX,EndY"
+
 
 Global $g_bChkCollectBuilderBase = False, $g_bChkStartClockTowerBoost = False, $g_bChkCTBoostBlderBz = False
 
@@ -1728,7 +1731,7 @@ Global $g_sBonusElixir = Null
 Global $g_sBonusDE = Null
 Global $g_sPercentagesResources = Null
 
-; MOD++
+; MOD++ Team
 #include "MOD\Globals.au3"
 
 ; EOF
