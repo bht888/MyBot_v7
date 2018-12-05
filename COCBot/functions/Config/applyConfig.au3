@@ -153,7 +153,7 @@ Func applyConfig($bRedrawAtExit = True, $TypeReadSave = "Read") ;Applies the dat
 	; <<< nothing here >>>
 
 	; <><><><> Bot / MOD <><><><>
-	; AiO++ Team
+	; MOD++
 	ApplyConfig_MOD($TypeReadSave)
 
 	; <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -297,7 +297,6 @@ Func ApplyConfig_600_6($TypeReadSave)
 			GUICtrlSetData($g_hTxtCollectDark, $g_iTxtCollectDark)
 			GUICtrlSetState($g_hChkTombstones, $g_bChkTombstones ? $GUI_CHECKED : $GUI_UNCHECKED)
 			GUICtrlSetState($g_hChkCleanYard, $g_bChkCleanYard ? $GUI_CHECKED : $GUI_UNCHECKED)
-			GUICtrlSetState($g_hChkCleanYardBB, $g_bChkCleanYardBB ? $GUI_CHECKED : $GUI_UNCHECKED) ; Builder Base Clean Yard
 			GUICtrlSetState($g_hChkGemsBox, $g_bChkGemsBox ? $GUI_CHECKED : $GUI_UNCHECKED)
 			GUICtrlSetState($g_hChkTreasuryCollect, $g_bChkTreasuryCollect ? $GUI_CHECKED : $GUI_UNCHECKED)
 			GUICtrlSetState($g_hChkFreeMagicItems, $g_bChkCollectFreeMagicItems ? $GUI_CHECKED : $GUI_UNCHECKED)
@@ -371,7 +370,6 @@ Func ApplyConfig_600_6($TypeReadSave)
 			$g_iTxtCollectDark = GUICtrlRead($g_hTxtCollectDark)
 			$g_bChkTombstones = (GUICtrlRead($g_hChkTombstones) = $GUI_CHECKED)
 			$g_bChkCleanYard = (GUICtrlRead($g_hChkCleanYard) = $GUI_CHECKED)
-			$g_bChkCleanYardBB = (GUICtrlRead($g_hChkCleanYardBB) = $GUI_CHECKED) ; Builder Base Clean Yard
 			$g_bChkCollectFreeMagicItems = (GUICtrlRead($g_hChkFreeMagicItems) = $GUI_CHECKED)
 			$g_bChkGemsBox = (GUICtrlRead($g_hChkGemsBox) = $GUI_CHECKED)
 			$g_bChkTreasuryCollect = (GUICtrlRead($g_hChkTreasuryCollect) = $GUI_CHECKED)
